@@ -1,0 +1,9 @@
+<!-- Load the disable_redundancy_pages program. -->
+<Data>
+	<Hex address="${%LOAD_ADDRESS%}">
+${%PROGRAM_DATA%}
+	</Hex>
+</Data>
+<Execute>
+	<Address>${%EXECUTION_ADDRESS%}</Address>
+</Execute>
