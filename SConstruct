@@ -69,7 +69,8 @@ atSnippet = {
     'parameter': {
     }
 }
-strArtifactPath = 'targets/snippets/%s/%s/%s' % ('/'.join(aArtifactGroupReverse), atSnippet['artifact'], PROJECT_VERSION)
+
+strArtifactPath = 'targets/snippets/%s' % ('/'.join(aArtifactGroupReverse))
 snippet = tEnv.HBootSnippet('%s/%s-%s.xml' % (strArtifactPath, atSnippet['artifact'], PROJECT_VERSION), tTmp, PARAMETER=atSnippet)
 
 # Create the POM file.
