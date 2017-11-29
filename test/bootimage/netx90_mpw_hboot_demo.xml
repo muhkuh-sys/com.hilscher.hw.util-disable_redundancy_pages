@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<HBootImage type="REGULAR">
+	<Chunks>
+		<!-- Breakpoint: Jump to a bx lr instruction in ROM, e.g. at 0x13c4 in netx90mpw -->
+		<Execute>
+			<Address>0x13c5</Address>
+		</Execute>
+		
+		<!-- Snip artifact="setup_sdram_netx90_mpw" group="org.muhkuh.hboot.sniplib" version="1.0.0" -->
+		<Snip artifact="disable_redundancy_pages_netx90mpw" group="com.hilscher.hw.util.netx90" version="1.0.0" />
+		
+		<!-- Breakpoint: Jump to a bx lr instruction in ROM, e.g. at 0x13c4 in netx90mpw -->
+		<Execute>
+			<Address>0x13c5</Address>
+		</Execute>
+			
+		<Data>
+			<File name="bootimage/blinki.bin" load_address="0x200c0" />
+		</Data>
+		
+ 		<Execute>
+			<Address>0x200dd</Address>
+		</Execute>
+	</Chunks>
+</HBootImage>
